@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+import "bootstrap/dist/css/bootstrap.min.css";
+=======
+>>>>>>> b09be87fa467b3c488cf3039a8a14afdc6a1f54f
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
