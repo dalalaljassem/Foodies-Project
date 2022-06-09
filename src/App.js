@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Start from "./components/Start";
 import Home from "./components/Home";
 import Category from "./components/Category";
 import Recipe from "./components/Recipe";

@@ -10,9 +10,7 @@ function Nav() {
         <NavLink to="/category">
           <a>Category</a>
         </NavLink>
-        <NavLink to="/recipe">
-          <a>Recipe</a>
-        </NavLink>
+        <NavLink to="/recipe">Recipe</NavLink>
       </div>
     </div>
   );
