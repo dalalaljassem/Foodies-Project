@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
 
 
 /* .category-items{
@@ -45,6 +46,8 @@
   width: 250px;
 }
 
+=======
+>>>>>>> b510314f416e10c9a09502b964ad427cd60eed78
 .body {
   display: flex;
   justify-content: center;
@@ -76,6 +79,7 @@
 }
 
 .one-recipe-img {
+<<<<<<< HEAD
   width: 200px;
   height:150px;
   /* width: 8rem;
@@ -114,3 +118,9 @@
   color: #fff;
   text-decoration: none;
 }
+=======
+  width: 80%;
+  /* width: 8rem;
+  height: 6rem; */
+}
+>>>>>>> b510314f416e10c9a09502b964ad427cd60eed78
