@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function TheNavBar() {
   return (
@@ -7,24 +8,16 @@ function TheNavBar() {
       <div className="logo">Foodies</div>
       <ul className="nav-links">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/category">Category</NavLink>
-        <NavLink to="/recipe">Recipe</NavLink>
+        <NavLink to="/category">Categories</NavLink>
+        <NavLink to="/recipe">Recipes</NavLink>
+        <NavLink class="fa fa-user" id="right" to="/">
+          Sign Up
+        </NavLink>
+        <NavLink id="right" to="/">
+          Sign In
+        </NavLink>
       </ul>
     </div>
-
-    // <div>
-    //   <div>
-    //     <NavLink to="/">
-    //       <a>Home </a>
-    //     </NavLink>
-    //     <NavLink to="/category">
-    //       <a> Category </a>
-    //     </NavLink>
-    //     <NavLink to="/recipe">
-    //       <a> Recipe</a>
-    //     </NavLink>
-    //   </div>
-    // </div>
   );
 }
 export default TheNavBar;

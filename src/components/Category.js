@@ -3,9 +3,6 @@ import Categoryitem from "./Categoryitem";
 import CategoryCreateModal from "./CategoryCreateModal";
 import CategoryStore from "../stores/categoryStore";
 import { observer } from "mobx-react";
-import Card from "react-bootstrap/Card";
-import { Button } from "react-bootstrap";
-import react from "react";
 
 function Category() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,17 +17,27 @@ function Category() {
   return (
     <div className="body">
       <br></br>
-      <h1>Category</h1>
+      <br></br>
+
+      <div id="containerCat">
+        <h3 id="a">Categories</h3>
+        <div id="b" className="buttonPlace">
+          <button className="btn">
+            <i
+              class="fa fa-plus-circle 2xl"
+              aria-hidden="true"
+              onClick={openModal}
+            ></i>
+            <CategoryCreateModal
+              isOpen={isOpen}
+              closeModal={closeModal}
+            ></CategoryCreateModal>
+          </button>
+        </div>
+      </div>
+      <br></br>
       <br></br>
       <div className="recipe-container">{catList}</div>
-      <button className="btn">
-        <i className="fa fa-plus"></i>
-        <span onClick={openModal}>New Category</span>
-        <CategoryCreateModal
-          isOpen={isOpen}
-          closeModal={closeModal}
-        ></CategoryCreateModal>
-      </button>
     </div>
   );
 }
