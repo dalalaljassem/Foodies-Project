@@ -22,7 +22,6 @@ function Category() {
       <br></br>
       <h1>Category</h1>
       <br></br>
-      <div className="recipe-container">{catList}</div>
       <button className="btn">
         <i className="fa fa-plus"></i>
         <span onClick={openModal}>New Category</span>
@@ -31,6 +30,7 @@ function Category() {
           closeModal={closeModal}
         ></CategoryCreateModal>
       </button>
+      <div className="recipe-container">{catList}</div>
     </div>
   );
 }
