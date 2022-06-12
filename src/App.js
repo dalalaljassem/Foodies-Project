@@ -6,11 +6,8 @@ import Category from "./components/Category";
 import Recipe from "./components/Recipe";
 import RecipeCat from "./components/RecipeCat";
 import TheNavBar from "./components/TheNavBar";
-<<<<<<< HEAD
 //import { LinkContainer } from "react-router-bootstrap";
 
-=======
->>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd
 function App() {
   return (
     <div className="App">
