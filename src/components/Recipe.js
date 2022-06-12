@@ -4,16 +4,16 @@ import RecipeItem from "./RecipeItem";
 import { observer } from "mobx-react";
 import React, { Component } from "react";
 function Recipe() {
-  const recipesList = recipesStore.recipes?.map((recipe) => (
-    <RecipeItem key={recipe._id} recipe={recipe} />
-  ));
+  const recipesList = recipesStore.recipes?.map((recipe) => {
+    return <RecipeItem key={recipe._id} recipe={recipe} />;
+  });
 
   return (
     <div className="body">
       <h1>All Recipes </h1>
-    <div>
-      <IngredModal />
-    </div>
+      <div>
+        <IngredModal />
+      </div>
       <div className="recipe-container"> {recipesList}</div>
     </div>
   );
