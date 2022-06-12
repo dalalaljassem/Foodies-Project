@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Categoryitem from "./Categoryitem";
 import CategoryCreateModal from "./CategoryCreateModal";
 import CategoryStore from "../stores/categoryStore";
@@ -9,11 +9,9 @@ function Category() {
   const closeModal = () => setIsOpen(false);
   const openModal = () => setIsOpen(true);
 
-  //view category list
-  const catList = CategoryStore.category?.map((category) => {
+  const catList = CategoryStore.Categories?.map((category) => {
     return <Categoryitem category={category} key={category._id} />;
   });
-
   return (
     <div className="body">
       <br></br>
