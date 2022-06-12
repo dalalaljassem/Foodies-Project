@@ -2,32 +2,32 @@ import { makeAutoObservable } from "mobx";
 // import axios from "axios";
 import instance from "./instance";
 
-class IngredientStore {
+class RecipeStore {
   constructor() {
     makeAutoObservable(this);
   }
+  recipes = [];
 
-  ingredients = [];
-
-  fetchIngredients = async () => {
+  fetchRecipes = async () => {
     try {
-      const response = await instance.get(`/ingredients`);
-      this.ingredients = response.data;
+      const response = await instance.get("/recipe");
+      this.recipes = response.data;
       console.log(response.data);
     } catch (error) {
-      console.log(error);
+      console.error("fetching error", error);
     }
   };
 
-  createIngrd = async (ingredient) => {
+  createRecipe = async (recipe) => {
     try {
-      const response = await instance.post("/ingredients", ingredient);
+      const response = await instance.post("user/:userId/recipes", recipe);
       console.log(response);
-      this.ingredients.push(response.data);
+      this.recipes.push(response.data);
     } catch (error) {
       console.error(error);
     }
   };
+  // `user/${userId}/recipes`
 
   getIngrd = async (ingredient) => {
     try {
@@ -40,7 +40,7 @@ class IngredientStore {
   };
 }
 
-const ingredientStore = new IngredientStore();
-ingredientStore.fetchIngredients();
+const recipeStore = new RecipeStore();
+recipeStore.fetchRecipes();
 
-export default ingredientStore;
+export default recipeStore;

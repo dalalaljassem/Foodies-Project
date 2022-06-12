@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +15,7 @@
   }
 }
 
+>>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +31,8 @@
   color: #61dafb;
 }
 
+<<<<<<< HEAD
+=======
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,6 +41,7 @@
     transform: rotate(360deg);
   }
 }
+>>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd
 
 
 /* .category-items{
@@ -116,6 +122,33 @@
   color: #fff;
   text-decoration: none;
 }
+<<<<<<< HEAD
+/* INGREDIENT CSS */
+.ing-modal{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.ing-list{
+
+  flex-direction: row;
+}
+
+/* .c1 {
+grid-area: c1;
+}
+.c2 {
+grid-area: c2;
+}
+.c3 {
+grid-area: c3;
+} */
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #92744c !important;
+}
+
+=======
 
 .buttonPlace btn{
   position: absolute;
@@ -184,3 +217,4 @@ height:700px
   background: rgb(25, 25, 25);
   text-decoration: none;
 }
+>>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd

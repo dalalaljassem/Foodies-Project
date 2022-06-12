@@ -27,7 +27,7 @@ function CreateIngredModal() {
 
   return (
     <div>
-      <Button variant="success" onClick={handleShow}>
+      <Button variant="" onClick={handleShow}>
         Add New Ingredient
       </Button>
 

@@ -35,6 +35,17 @@ function Category() {
       </div>
       <br></br>
       <br></br>
+<<<<<<< HEAD
+      <button className="btn">
+        <i className="fa fa-plus"></i>
+        <span onClick={openModal}>New Category</span>
+        <CategoryCreateModal
+          isOpen={isOpen}
+          closeModal={closeModal}
+        ></CategoryCreateModal>
+      </button>
+=======
+>>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd
       <div className="recipe-container">{catList}</div>
     </div>
   );
