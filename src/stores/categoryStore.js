@@ -5,7 +5,9 @@ class CategoryStore {
   Categories = [];
 
   constructor() {
-    makeAutoObservable(this);
+    makeAutoObservable(this, {
+      Categories: observable,
+    });
   }
 
   //category = "";
@@ -13,11 +15,19 @@ class CategoryStore {
   fetchCategories = async () => {
     try {
       const response = await instance.get(`/category`);
-      this.category = response.data;
-      console.log(response.data);
+      this.Categories = response.data;
+      //console.log(response.data);
     } catch (error) {
       console.log(error);
     }
+  };
+  getCategoryName = (categoryId) => {
+    //console.log(categoryId);
+    const category = this.Categories?.find(
+      (category) => category?._id === categoryId
+    );
+    //console.log(category);
+    return category;
   };
 
   createCategory = async (category) => {

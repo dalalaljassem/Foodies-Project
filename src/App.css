@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+>>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,12 +31,23 @@
   color: #61dafb;
 }
 
+<<<<<<< HEAD
+=======
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+>>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd
 
 
 /* .category-items{
 } */
 
-.category-items img{
+.category-items img {
   width: 250px;
 }
 
@@ -50,15 +75,15 @@
   width: 16rem;
   height: 16rem;
   margin: 2px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 20px;
+  /* border: 2px solid rgb(0, 0, 0);*/
+  border-radius: 20px; 
   font-weight: bold;
   background-color: beige;
 }
 
 .one-recipe-img {
   width: 200px;
-  height:150px;
+  height: 150px;
   /* width: 8rem;
   height: 6rem; */
 }
@@ -81,20 +106,23 @@
   justify-content: space-around;
   align-items: center;
   color: #fff;
+  font-family: sans-serif;
   background: rgb(25, 25, 25);
 }
 
 .App .navbar .nav-links {
   width: 40%;
+
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
-.App .navbar .nav-links>a{
+.App .navbar .nav-links > a {
   color: #fff;
   text-decoration: none;
 }
+<<<<<<< HEAD
 /* INGREDIENT CSS */
 .ing-modal{
   padding-top: 10px;
@@ -120,3 +148,73 @@ grid-area: c3;
   background-color: #92744c !important;
 }
 
+=======
+
+.buttonPlace btn{
+  position: absolute;
+  right: 100px;
+  width: 500px;
+  height: 120px;
+}
+
+.btn-primary {
+  color: #142124;
+  background-color: #f7fd0d42;
+  border-color: #f7fd0d42;
+}
+
+#container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#containerCat{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+#a {
+  float: left;
+}
+#b {
+  float: right;
+}
+
+.colLeft img{
+height:700px
+}
+
+.colRight img{
+  height:700px
+  }
+.nav-links :hover {
+  font-size: x-large;
+}
+
+.button {
+  border: none;
+  color: #fff;
+  background: rgb(25, 25, 25);
+  text-decoration: none;
+}
+.logo {
+  font-size: larger;
+}
+.item {
+  color: black;
+  text-decoration: none;
+}
+.item :hover {
+  color: black;
+  font-size: large;
+}
+
+.name {
+  font-family: sans-serif;
+  border: none;
+  color: #fff;
+  background: rgb(25, 25, 25);
+  text-decoration: none;
+}
+>>>>>>> b8942007ccd53b4d7f2515eaa8cb76958ea59bcd
