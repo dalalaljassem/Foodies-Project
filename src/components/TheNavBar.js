@@ -16,6 +16,12 @@ function TheNavBar() {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/category">Categories</NavLink>
         <NavLink to="/recipe">Recipes</NavLink>
+        {/* <NavLink class="fa fa-user" id="right" to="/">
+          Sign Up
+        </NavLink>
+        <NavLink id="right" to="/">
+          Sign In
+        </NavLink> */}
         {authStore.user ? (
           <>
             <SignoutButton />

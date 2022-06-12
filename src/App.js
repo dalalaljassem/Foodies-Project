@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
@@ -5,9 +6,6 @@ import Category from "./components/Category";
 import Recipe from "./components/Recipe";
 import RecipeCat from "./components/RecipeCat";
 import TheNavBar from "./components/TheNavBar";
-//import { LinkContainer } from "react-router-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 function App() {
   return (
     <div className="App">

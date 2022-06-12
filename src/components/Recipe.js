@@ -10,10 +10,18 @@ function Recipe() {
 
   return (
     <div className="body">
-      <h1>All Recipes </h1>
-      <div>
-        <IngredModal />
+      <br></br>
+      <br></br>
+
+      <div id="containerCat">
+        <h3 id="a">All Recipes</h3>
+        <div id="b" className="buttonPlace">
+          <IngredModal />
+        </div>
       </div>
+      <br></br>
+      <br></br>
+
       <div className="recipe-container"> {recipesList}</div>
     </div>
   );

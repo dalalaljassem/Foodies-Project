@@ -37,6 +37,7 @@
   }
 }
 
+
 /* .category-items{
 } */
 
@@ -68,8 +69,8 @@
   width: 16rem;
   height: 16rem;
   margin: 2px;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 20px;
+  /* border: 2px solid rgb(0, 0, 0);*/
+  border-radius: 20px; 
   font-weight: bold;
   background-color: beige;
 }
@@ -115,6 +116,45 @@
   color: #fff;
   text-decoration: none;
 }
+
+.buttonPlace btn{
+  position: absolute;
+  right: 100px;
+  width: 500px;
+  height: 120px;
+}
+
+.btn-primary {
+  color: #142124;
+  background-color: #f7fd0d42;
+  border-color: #f7fd0d42;
+}
+
+#container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#containerCat{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+#a {
+  float: left;
+}
+#b {
+  float: right;
+}
+
+.colLeft img{
+height:700px
+}
+
+.colRight img{
+  height:700px
+  }
 .nav-links :hover {
   font-size: x-large;
 }
